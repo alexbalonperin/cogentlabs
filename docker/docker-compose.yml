@@ -1,0 +1,50 @@
+version: '2'
+
+services:
+  gateway:
+    image: cogentlabs/api-gateway:latest
+    restart: 'always'
+    ports:
+      - '8080:8080'
+    environment:
+      - API_HOST=0.0.0.0
+      - IMAGE_SERVICE_HOST=image-service
+
+  image-service:
+    image: cogentlabs/image-service:latest
+    restart: 'always'
+    depends_on:
+      - rabbitmq
+    ports:
+      - '8000:8000'
+    volumes:
+      - /tmp/:/tmp/
+    environment:
+      - SERVICE_HOST=0.0.0.0
+      - RABBIT_HOST=rabbitmq
+      - RABBIT_USER=alex
+      - RABBIT_PASSWORD=password
+      - RABBIT_QUEUE=images
+
+  image-processor:
+    image: cogentlabs/image-processor:latest
+    restart: 'always'
+    depends_on:
+      - rabbitmq
+    volumes:
+      - /tmp/:/tmp/
+    environment:
+      - RABBIT_HOST=rabbitmq
+      - RABBIT_USER=alex
+      - RABBIT_PASSWORD=password
+      - RABBIT_QUEUE=images
+
+  rabbitmq:
+    image: cogentlabs/rabbitmq:latest
+    ports:
+      - '4369:4369'
+      - '5671:5671'
+      - '5672:5672'
+      - '25672:25672'
+      - '15672:15672'
+
