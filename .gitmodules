@@ -1,0 +1,9 @@
+[submodule "cogentlabs-image-processor"]
+	path = cogentlabs-image-processor
+	url = https://github.com/alexbalonperin/cogentlabs-image-processor.git
+[submodule "cogentlabs-image-service"]
+	path = cogentlabs-image-service
+	url = https://github.com/alexbalonperin/cogentlabs-image-service.git
+[submodule "cogentlabs-api-gateway"]
+	path = cogentlabs-api-gateway
+	url = https://github.com/alexbalonperin/cogentlabs-api-gateway.git
