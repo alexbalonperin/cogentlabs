@@ -48,3 +48,8 @@ services:
       - '25672:25672'
       - '15672:15672'
 
+  redis:
+    image: redis:5.0.4-alpine
+    ports:
+      - 6379:6379
+
