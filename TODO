@@ -1,16 +1,16 @@
 TODO:
 - Write tests
+- Error Handling
+- README
+- Read more about rabbitmq to understand best config
 - Versioning of the API
+- API key to limit the request rate per account
+- Schema registry would be nice
 - [In Progress] Use different objects at the boundaries of the program
+- [DONE] Create temporary folder in the code if it doesn't exist
 - [DONE] Response of the POST /images API endpoint should include the id
-- Create temporary folder in the code if it doesn't exist
 - [DONE] Store processing status in redis
 - [DONE] Create thumbnail in the image-processor with imagemagick
 - [DONE] Return thumbnail with GET /images/:id/thumbnail endpoint
-- Read more about rabbitmq to understand best config
-- Error Handling
-- README
 - [DONE] Avro with javascript on RabbitMQ?
-- Schema registry would be nice
-- API key to limit the request rate per account
-- Save original file extension
+- [DONE] Save original file extension
