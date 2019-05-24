@@ -54,6 +54,7 @@ Improvements
 - Add monitoring of all components and custom metrics to measure success/failure rates and response/processing times.
 - Load testing. (`scripts/test_sending_images.sh <num-request>` can be used for a very basic/naive load test)
 - More tests for corner cases.
+- Add build config with travis
 
 Development
 --
