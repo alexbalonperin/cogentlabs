@@ -43,7 +43,7 @@ Design decisions
 - Similarly, the resulting thumbnail path is stored in Redis.
 - Since the image processing is supposed to be a long running job, the Image Processor updates the Redis status before and after starting the processing of an image so that we can easily investigate where in the pipeline a specific image is at.
 
-Improvements
+Potential improvements
 --
 - Depending on business needs, potentially use API keys for authentication of the client. This would allow us to better control the rate of requests to avoid overwhelming the server in case of peak usage or DDOS attacks. This would also allows us to potentially monetize the service.
 - Add API versioning to make it possible to introduce breaking changes if needed. Ideally, updating the version of the API should be a last resort solution since it forces current customers to change their current implementations to get new features.
