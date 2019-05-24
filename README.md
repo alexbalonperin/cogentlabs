@@ -63,6 +63,7 @@ Development
 
 Run the tests
 - `cd cogentlabs-api-gateway` (from the root of the project)
+- `npm install` to install all dependencies
 - `npm test` runs the tests inside the test folder
 
 Development
@@ -73,6 +74,7 @@ Development
 
 Run the tests
 - `cd cogentlabs-image-service` (from the root of the project)
+- `npm install` to install all dependencies
 - `npm test` runs the tests inside the test folder
 
 Development
@@ -83,6 +85,7 @@ Development
 
 Run the tests
 - `cd cogentlabs-image-service` (from the root of the project)
+- `npm install` to install all dependencies
 - `npm test` runs the tests inside the test folder
 
 Development
