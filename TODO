@@ -1,12 +1,11 @@
 TODO:
 - Write tests
 - Error Handling
-- README
 - Read more about rabbitmq to understand best config
 - Versioning of the API
 - API key to limit the request rate per account
-- Schema registry would be nice
 - [In Progress] Use different objects at the boundaries of the program
+- [DONE] README
 - [DONE] Create temporary folder in the code if it doesn't exist
 - [DONE] Response of the POST /images API endpoint should include the id
 - [DONE] Store processing status in redis
